@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    color: white;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2305f564' fill-opacity='0.1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+/*=================================================================================================================*/
+/*========================================== MENU DE NAVEGACION ===================================================*/
+/*=================================================================================================================*/
+.nav-menu{
+    font-size: 17px;
+    display: flex; /*Lo crea tipo columna*/
+    justify-content: space-between; /*Lo coloca al final*/
+    align-items: center; /*Lo centra*/
+    height: 60px;
+    padding: 20px 0;
+}
+.logo-brand{
+    width: 100px; /*Pone más chica la foto del logo*/
+}
+.nav-menu ul{
+    display: flex; /*Los pone uno al lado del otro*/
+}
+.nav-menu ul li{
+    padding: 10px;
+}
+.nav-menu ul li a{
+    padding: 15px;
+}
+.nav-menu ul li a:hover{
+    border-bottom: 3px solid rgb(197, 0, 0);
+    color: red;
+}
+.nav-menu ul.menus{
+    flex: 1;
+    margin-left: 70px;
+}
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none; /*Para que desaparezca*/
+}
+/*=================================================================================================================*/
+/*==================================================HEADER=========================================================*/
+/*=================================================================================================================*/
+hr{
+    margin: 10px 0;
+}
+.header{
+    width: 100%;
+    height: 500px; /*Cambia la altura*/
+    background: url(../img/intro-bg.jpg) no-repeat center center/cover; /*Para que no se repita la imagen*/
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 7px 15px;
+    background: #9c0404d2;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+.btn:hover{
+    opacity: 0.5; /*Para que se vea translucida*/
+}
+/*=================================================================================================================*/
+/*==================================================BANNER=========================================================*/
+/*=================================================================================================================*/
+.cards-banner-one{
+    width: 100%;
+    height: 350px;
+    background: url(../img/bannersamp1.png) no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+
+.cards-banner-one .contenido{
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+.cards-banner-one .contenido p,
+.cards-banner-one .contenido h2{
+    margin: 10px 0 20px 0;
+}
+.cards-banner-two{
+    width: 100%;
+    height: 350px;
+    background: url(../img/bannersamp2.png) no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+.cards-banner-two .contenido{
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+.cards-banner-two .contenido p,
+.cards-banner-two .contenido h2{
+    margin: 10px 0 20px 0;
+}
+/*=================================================================================================================*/
+/*=================================================TARJETAS========================================================*/
+/*=================================================================================================================*/
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Hace columnas*/
+    gap: 25px; /*Espaciado de las tarjetas*/
+    margin: 10px 0;
+}
+.tarjetas img{
+    width: 200px;
+    height: 200px;
+}
+.tarjetas h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.tarjetas a{
+    padding: 10px 0;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+.tarjetas a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+.modal article{
+    margin: 20px 20px;
+    padding: 5px 0 20px;
+    height: 850px;
+    background: #07d3113b;
+    border-radius: 5px;
+}
+
+.modal article .font{
+    margin: 20px 20px;
+    padding: 20px 0 20px;
+    height: 800px;
+    background: #6666667c;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.modal article .font h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.modal article .font p{
+    text-align: left;
+    margin: 20px 20px;
+}
+.modal2 article{
+    margin: 20px 20px;
+    padding: 5px 0 20px;
+    height: 1550px;
+    background: #07d3113b;
+    border-radius: 5px;
+}
+.modal2 article .font2{
+    margin: 20px 20px;
+    padding: 20px 0 20px;
+    height: 1500px;
+    background: #6666667c;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.modal2 article .font2 h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.modal2 article .font2 p{
+    text-align: left;
+    margin: 20px 20px;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 7px 15px;
+    background: #9c0404d2;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+.btn:hover{
+    opacity: 0.5; /*Para que se vea translucida*/
+}
+@media (max-width: 500px){
+    .modal .content-modal{
+        width: 90%;
+        max-width: none;
+        left: 5%;
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 700px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-menu ul.menus{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+    .nav-menu ul.menu.show{
+        transform: translateX(-20px)
+    }
+    .nav-menu ul.menus{
+        padding: 20px;
+        font-size: 14px;
+    }
+    .tarjetas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
